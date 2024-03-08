@@ -1,4 +1,4 @@
-Run the script process_data_to_1chanelPNG.py to convert the images from the dataset into .png images (grayscale). You need to create directory called datasets/lung_8_256/ beforehand.
+Run the script process_data_to_1chanelPNG.py to convert the images from the dataset into .png images (grayscale). You need to create a directory called datasets/lung_8_256/ beforehand.
 
 To run training, 
 
