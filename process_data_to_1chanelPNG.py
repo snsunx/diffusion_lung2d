@@ -13,8 +13,7 @@ output = os.listdir(output_directory_path)
 
 data = [os.path.join(output_directory_path, file) for file in output]
 
-# directory = '/home/ismail/diffusion_lung_2d_1chanel/datasets/lung_8_256/'
-directory = '/home/shining/images' # NOTE: please change this to the image directory
+directory = os.environ['DATASET_DIR']
 if not os.path.exists(directory):
     os.mkdir(directory)
 
@@ -27,4 +26,4 @@ for path in data:
     rgb_image = to_pil(uni_chanel_tensor)
     name = path.split('/')[-1].split('.')[0]
     rgb_image.save(os.path.join(directory, f'{name}.png'))
-    
+

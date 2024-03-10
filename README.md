@@ -8,9 +8,9 @@ To run training,
 
 3 - Set TRAIN_FLAGS. For instance, export TRAIN_FLAGS="--lr 2e-5 --batch_size 128"
 
-To start trainng, run the command
+To start training, run the command
 
-python image_train.py --data_dir PATH TO DATASET  $MODEL_FLAGS $DIFFUSION_FLAGS $TRAIN_FLAGS
+python image_train.py --data_dir DATASET_DIR  $MODEL_FLAGS $DIFFUSION_FLAGS $TRAIN_FLAGS
 
 Use export OPENAI_LOGDIR=".../diffusion_lung_2d/models" to specify the location where checkpoints will be saved.
 
